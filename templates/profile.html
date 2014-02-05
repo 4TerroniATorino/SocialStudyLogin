@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block main %}
+  <h2>this is you</h2>
+  <div class="media">
+    <div class="img avatar">
+      <img src="{{ user.avatar_url }}">
+    </div>
+    <div class="body">
+      <h1 style="margin-top: 0; padding-top: 0">{{ user.name }}</h1>
+      <p><a href="{{ user.link }}" target="_blank" rel="nofollow">{{ user.link }}</a></p>
+    </div>
+  </div>
+
+        <form action="http://spikesxweb.appspot.com/spike" method="get">
+            <input type="hidden" name="user" value="{{ user.name }}">
+            <input type="submit" value="Accedi alla Servlet">
+        </form>
+
+  <p style="margin-top: 2em;">
+    <a href="/logout" class="btn">logout</a>
+  </p>
+{% endblock %}

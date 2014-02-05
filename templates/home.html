@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block main %}
+  <p>Effettua il login, St..udente...</p>
+  {% if logged_in %}
+    <p>Sembra tu abbia gia' effettuato il Login</p>
+    <a href="{{ url_for('profile') }}" class="btn">Profilo</a>
+    <a href="/logout" class="btn">logout</a>
+  {% else %}
+    <p>Entra con:</p>
+    <p>
+      <a href="/auth/google" class="btn">Google</a>
+      <a href="/auth/facebook" class="btn">Facebook</a>
+    </p>
+  {% endif %}
+{% endblock %}

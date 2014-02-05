@@ -1,0 +1,38 @@
+<!doctype html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <title>Social Study - Login Facebook & Google</title>
+  <meta name="author" content="cloudware.it">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Social Study - Login</a></h1>
+  </header>
+  <div role="main" class="container" style="margin-bottom: 2em;">
+    <!--{% for data, name in flashes %}
+      <h2>{{ name }}</h2>
+      <table>
+        <tbody>
+          {% for k, v in data.items() -%}
+            <tr>
+              <td style="padding-right: 5px">{{ k }}:</td>
+              <td>{{ v }}</td>
+            </tr>
+          {% endfor -%}
+        </tbody>
+      </table>
+    {% endfor %}-->
+
+    {% block main %}{% endblock %}
+  </div>
+  <footer>
+    <nav><ul class="inline bull">
+      <li>4Terroni a Torino<br>
+      </li>
+    </ul></nav>
+  </footer>
+</body>
+</html>
