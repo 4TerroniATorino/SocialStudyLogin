@@ -18,9 +18,9 @@ FACEBOOK_APP_SECRET = 'd5ca5fda7506e0bb9ac7e8c86db5af55'
 AUTH_CONFIG = {
   # OAuth 2.0 providers
   'google'      : (GOOGLE_APP_ID, GOOGLE_APP_SECRET,
-                  'https://www.googleapis.com/auth/userinfo.profile'),
+                  'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email'),
   'facebook'    : (FACEBOOK_APP_ID, FACEBOOK_APP_SECRET,
-                  'user_about_me'),
+                  'user_about_me,email'),
 
   # OpenID doesn't need any key/secret
 }

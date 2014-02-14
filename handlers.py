@@ -106,10 +106,11 @@ class AuthHandler(BaseRequestHandler, SimpleAuthHandler):
       'id'     : lambda id: ('avatar_url', 
         'http://graph.facebook.com/{0}/picture?type=large'.format(id)),
       'name'   : 'name',
-      'link'   : 'link'
+      'email'   : 'email'
     },
     'google'   : {
       'picture': 'avatar_url',
+      'email'  : 'email',
       'name'   : 'name',
       'profile': 'link'
     },
